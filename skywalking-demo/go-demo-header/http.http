@@ -1,0 +1,22 @@
+GET http://10.64.7.77:32319/api/v1/query?query=service_cpm{service="serviceb-demo",layer="GENERAL"}
+Accept: application/json
+
+###
+POST http://10.64.7.77:32319/api/v1/series
+Content-Type: application/x-www-form-urlencoded
+
+start=2025-01-14T21:16:17.678Z&end=2025-01-15T09:16:17.678Z&match[]=service_cpm
+
+###
+POST
+Content-Type: application/json
+
+{
+
+}
+
+###
+GET http://localhost:8080/api/item?id=99
+Accept: application/json
+Sw8: 1-ZGY4ZDQ0ZDVkN2UyNDg0ZGI3YzMxYjEzZDM3ZDM1MWQ=-Njk2NDc5NjctNjk2NS00NTYzLWE1MzEtNTY1NjcxNmQ0MTUy-1-c2VydmljZWIuZGVtbw==-c2lkZWNhcn4xMC4xMC41My4xMjJ+c2VydmljZWItdjItYmZkZDU4NmI5LWp2YnZzLmRlbW9+ZGVtby5zdmMuY2x1c3Rlci5sb2NhbA==-Lw==-MTAuMTAuNTMuMTIyOjgwODA=
+###
