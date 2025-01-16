@@ -51,7 +51,7 @@ kubectl create ns demo
 ```
 ### 6.3、安装部署
 ```
-helm install skywalking-demo -n demo ../deploy/ \
+helm install skywalking-demo -n demo ../chart/ \
   --set skywalking.service=tracing.istio-system.svc.cluster.local:11800 \
   --set image=gientech2025/java-demo:latest
 ```
