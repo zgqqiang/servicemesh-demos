@@ -51,7 +51,7 @@ go build -toolexec "path/to/skywalking-go-agent -config config.yaml" -a
 ```
 Dockerfile所在目录执行
 
-docker build -f Dockerfile -t 10.64.17.85:30085/demo/go-demo:latest .
+docker build -f Dockerfile -t gientech2025/go-demo:latest .
 ```
 ### 6.2、创建命名空间
 ```
@@ -62,5 +62,5 @@ kubectl create ns demo
 ```
 helm install skywalking-demo -n demo ../deploy/ \
   --set skywalking.service=tracing.istio-system.svc.cluster.local:11800 \
-  --set image=10.64.17.85:30085/demo/go-demo:latest
+  --set image=gientech2025/go-demo:latest
 ```
